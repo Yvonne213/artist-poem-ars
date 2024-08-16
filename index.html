@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.typekit.net/tfu4bnb.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Load Ethers.js first -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js" type="application/javascript" defer></script>
+  <script src="js/ethers-5.6.umd.min.js"></script>
+  <!-- Load jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  
+  <!-- Load ABI script -->
+  <script src="abi.js" defer></script>
+  
+  <!-- Load your custom script that depends on Ethers.js -->
+  <script src="contract.js" defer></script>
+  
+  <title>Artist Interface</title>
+</head>
+
+<body>
+  <div class="background-image">
+  <div class="bg"></div>
+  <div class="container">
+    <div class="session1">
+      <div class="connect-blockchain">
+        <div class="connect">
+          <button id="connectButton">Connect to Blockchain</button>
+          <br>
+          <strong>Connection Status:</strong>
+          <span id="connectionStatus"> × Not connected</span>
+        </div>
+      </div>
+      <br>
+      <div class="typein">
+
+        <label for="verbInput">(verb in plural)</label>
+        <br>
+        <input type="text" id="verbInput" placeholder="wanders around">
+        <br>
+        <label for="nounInput">(noun)</label>
+        <br>
+        <input type="text" id="nounInput" placeholder="the ocean">
+        <br>
+        <label for="timeInput">(time or location)</label>
+        <br>
+        <input type="text" id="timeInput" placeholder="at midnight">
+
+      </div>
+
+      <br>
+      <div class="button-container">
+        <div class="button-marquee-container">
+          <button class="button1" id="setArtistButton">Create the artist<br><small>[Notice ↓ ]</small></button>
+          <marquee class="moving1" behavior="scroll" direction="left">Confirm the transaction on the pop-up window. You
+            may have to scroll down.
+
+          </marquee>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="session2">
+      <h1>ARTIST POEM PROCESSOR</h1>
+      <pre id="userSentence" class="current"></pre>
+      
+    </div>
+
+    <div class="session3">
+      <div class="currentArtist">
+        <h2>ARTIST  LIST</h2><br>
+        <p class="note">* scroll up to check</p>
+        <div class="typein-history">
+         
+          <!-- <ul id="history" class="history-record"></ul> -->
+          <ul id="history" class="history-list"></ul>
+        </div>
+      </div>
+      <br>
+      <div class="button-right">
+        <button class="button2" id="generateArtistButton">Create a random artist<br><small>[optional]</small></button>
+      </div>
+
+    </div>
+
+
+  </div>
+</body>
+
+</html>

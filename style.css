@@ -1,0 +1,383 @@
+body,
+html {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(206, 86, 86);
+  text-align: center;
+
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 10px 10px, #afaeae8f 1px, transparent 1px);
+  background-size: 20px 20px;
+  /* Adjust the size of each dot and spacing */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr 1fr;
+  /*3 columns */
+  grid-gap: 20px;
+  /* Gap between grid items */
+  padding: 20px;
+  min-height: 80vh;
+
+}
+
+/***************************************/
+
+.session1 {
+  display: flex;
+  flex-direction: column;
+  /* Add some padding for better visibility */
+  /*width: 480px;  Set the width of the session */
+  /* Set the height of the session */
+
+  /* border: 2px solid #ffffff; */
+  /* margin-left: 100px; */
+  /* margin-top: 100px; */
+}
+
+/********************/
+.connect-blockchain {
+  background-color: #feaaaa0c;
+  border: 2px solid rgba(254, 72, 72, 0.518);
+  padding: 15px 20px;
+}
+
+.connect {
+  font-size: clamp(18px, 0.8vw, 40px);
+  text-align: center;
+  color: #e2b3b3b4;
+}
+
+#connectButton {
+  margin-bottom: 1vh;
+  background-color: #fecdcd77;
+  color: rgb(229, 128, 128);
+  /* border: 1px solid rgba(255, 255, 255, 0.929); */
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#connectButton:hover {
+  background-color: #0062b75a;
+  box-shadow: 0 8px 16px 0 rgba(0, 34, 101, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/********************/
+.typein {
+  text-align: left;
+  font-size: clamp(20px, 1vw, 40px);
+  background-color: #feaaaa0c;
+  padding: 25px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Add some padding for better visibility */
+  /*width: 460px; /* Set the width of the session */
+  /* Set the height of the session */
+  line-height: 1;
+  /* Adjust the line-height value as needed */
+  border: 2px solid rgba(254, 72, 72, 0.518);
+  color:rgb(225, 128, 128);
+}
+
+input {
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  padding: 10px;
+  font-size: 20px;
+  /* Set a maximum width for the input fields */
+  /*width: 435px; /* Make sure the width doesn't exceed the maximum width */
+  background-color: #feaaaa40;
+  border: 1px solid rgb(252, 203, 203);
+  color: #830e0e;
+  outline: none;
+}
+
+input::placeholder {
+  color: #b047476f;
+  /* Set the color you want for the placeholder text */
+}
+
+input:hover {
+  border: 1.2px solid #0198cf;
+  /* Set the desired hover border color */
+
+  background-color: #5e5e5e1b;
+}
+
+/********************/
+.button1 {
+  border: none;
+  padding: clamp(60px, 1vw, 80px);
+  background-color: #fea2a253;
+  color: rgb(208, 88, 88);
+  border: 1.5px solid rgba(251, 208, 208, 0.5);
+  font-size: clamp(30px, 1vw, 50px);
+
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  border-radius: 5px;
+  /* aspect-ratio: 1 / 1; */
+  /* flex-grow: 1; */
+  width: 100%;
+  height: 22vh;
+  /* Set width to 100% for responsiveness */
+  max-width: 700px;
+  /* Set a maximum width for larger screens */
+  
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  /* Adjust the space between buttons by changing this value */
+  align-items: start;
+  /* Align items at the top */
+  background-color: #feaaaa0c;
+  padding: 20px;
+  /* Add some padding for better visibility */
+  /* width: 480px; /* Set the width of the session */
+
+  /* Set the height of the session */
+  border: 2px solid rgba(254, 72, 72, 0.518);
+  height: 30%;
+}
+
+.button-marquee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center-align the items vertically */
+}
+
+
+
+button:hover {
+  background-color: #0062b75a;
+  box-shadow: 0 8px 16px 0 rgba(0, 34, 101, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.moving1 {
+  /* Set the text size to 20 pixels */
+  color: #b8676779;
+  line-height: 2;
+  /* Adjust line height to reduce spacing */
+  font-size: clamp(22px, 1vw, 28px);
+  /* Adjust font size as needed */
+
+}
+
+/***************************************/
+.session2 {
+  background-color: #feaaaa0c;
+  padding: 20px;
+  /* Add some padding for better visibility */
+  /* width: 800px;  Set the width of the session */
+  /* Set the height of the session */
+  border: 2px solid rgba(254, 72, 72, 0.518);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  white-space: nowrap;
+  font-size: clamp(10px, 20px + 2vw, 80px);
+  text-align: center;
+  margin: auto;
+
+}
+
+.current {
+  /* border: 1.5px solid rgba(145, 145, 145, 0.343); */
+  /*max-width: 800px;
+  padding: 20px;
+  margin: auto; /* Center the div horizontally */
+  color: #484848be;
+  text-transform: uppercase;
+  font-size: clamp(35px, 2.4vw, 100px);
+  font-family: "pf-videotext", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+
+  list-style: none;
+  background-color: rgba(255, 173, 173, 0.119);
+  padding: 0;
+  flex-grow: 1;
+  height: 100%;
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-align: left;
+}
+
+/********************/
+.typein-history {
+  /* border: 1.5px solid rgb(145, 145, 145); */
+  /* max-width: 800px; */
+  /* padding: 10px; */
+  /* margin: auto;  */
+  /* font-size: 23px; */
+  background-color: rgba(255, 211, 211, 0.282);
+
+}
+
+.history-list {
+  list-style: none;
+  text-align: left;
+  margin: auto;
+  /* Center the div horizontally */
+  white-space: pre-wrap;
+  max-height: 38vh;
+  /* max-width: 800px; */
+  overflow-y: auto;
+  /* Enable vertical scrolling when content exceeds the height */
+
+  font-size: clamp(18px, 1vw, 35px);
+  /* font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "pf-videotext", sans-serif;
+font-weight: 400;
+font-style: normal;
+  line-height:1.3;
+  color:#898888;
+
+  scroll-behavior: smooth;
+  overflow: scroll;
+  /* Center the div horizontally */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.history-record::-webkit-scrollbar {
+  display: none;
+}
+
+#history li {
+  /* margin-bottom: 20px; */
+  padding: 20px;
+  margin-left: 10%;
+ 
+}
+
+/***************************************/
+.session3 {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #e3757527;
+  padding: 20px; */
+  /* Add some padding for better visibility */
+  /* width: 450px; /* Set the width of the session */
+
+  /* Set the height of the session */
+  /* border: 2px solid #ffffff;
+
+  font-size: 20px;
+  font-family: "magistral", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  line-height: 2; */
+}
+
+
+.currentArtist {
+  background-color: #ffc2c227;
+  padding: 20px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* Add some padding for better visibility */
+  /*width: 460px; /* Set the width of the session */
+  /* Set the height of the session */
+  line-height: 0.7;
+  /* Adjust the line-height value as needed */
+  border: 2px solid rgba(254, 72, 72, 0.518);
+font-size: clamp(10px, 1vw, 20px);
+}
+.note {
+  margin-top: -20px;
+  font-size: clamp(15px, 1vw, 20px);
+  font-family: "magistral", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color:rgb(221, 160, 160);
+}
+.button-right {
+  display: flex;
+  gap: 20px;
+  /* Adjust the space between buttons by changing this value */
+  background-color:#feaaaa0c;
+  padding: 20px;
+  /* Add some padding for better visibility */
+  /* width: 480px; /* Set the width of the session */
+
+  /* Set the height of the session */
+  border: 2px solid rgba(254, 72, 72, 0.518);
+  height: 30%;
+}
+
+.button2 {
+  border: none;
+  padding: 20px;
+  background-color: #fea2a253;;
+  color: rgb(153, 145, 145);
+  border: 1.5px solid rgba(251, 208, 208, 0.5);
+  font-size: clamp(30px, 1vw, 50px);
+
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  border-radius: 5px;
+  /* aspect-ratio: 1 / 1; */
+  /* flex-grow: 1; */
+  width: 100%;
+  height: auto;
+  /* Set width to 100% for responsiveness */
+  max-width: 800px;
+  /* Set a maximum width for larger screens */
+
+}
+
+/********************/
