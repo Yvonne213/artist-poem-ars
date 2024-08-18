@@ -142,12 +142,12 @@ setInterval(changePlaceholder, 3000);
         // Check if the current page is the third HTML page
         const isThirdHTML = window.location.href.includes("list.html");
 
-        // Update the terminal with the latest sentence (on other pages)
-        if (!isThirdHTML) {
-            const terminal = document.getElementById("userSentence");
-            terminal.textContent = generatedSentence.toUpperCase();
+        // // Update the terminal with the latest sentence (on other pages)
+        // if (!isThirdHTML) {
+        //     const terminal = document.getElementById("userSentence");
+        //     terminal.textContent = generatedSentence.toUpperCase();
 
-        }
+        // }
 
         // Update the sentence history list
         const historyList = document.getElementById("history");
@@ -281,7 +281,7 @@ setInterval(changePlaceholder, 3000);
        
         
 
-        const artistDescription = `${line1}\n${line2}\n${line3}\n${line4}`;
+        const artistDescription = `${line1}\n${line2}\n${line3}\n${line4}`.toUpperCase();
         // Display the generated artist in your HTML
         console.log(artistDescription);
         console.log(document.getElementById("userSentence")); // Error here 
