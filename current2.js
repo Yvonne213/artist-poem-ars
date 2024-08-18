@@ -14,7 +14,12 @@ ws.onmessage = function (event) {
   // Update the terminal with the latest sentence (on other pages)
   if (!isThirdHTML) {
     const terminal = document.getElementById("userSentence");
-    terminal.textContent = generatedSentence;
+    if (sentenceHistory.length > 1) {
+      terminal.textContent = sentenceHistory[sentenceHistory.length - 2]; // Show the last sentence
+    } else {
+      terminal.textContent = generatedSentence;
+    }
+    console.log(terminal.textContent);
      // Set a random color for the terminal
 const randomColor = getRandomColor();
 console.log('Random Color:', randomColor);
