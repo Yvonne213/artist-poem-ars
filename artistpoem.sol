@@ -31,6 +31,7 @@ constructor() {
 function textInput (string memory _verb, string memory _noun, string memory _time) public {
     require(bytes(_verb).length > 0 && bytes(_noun).length > 0 && bytes(_time).length > 0, "Input strings cannot be empty");
     require(bytes(_verb).length < 12, "verbs list is full");
+    require(bytes(_noun).length < 15, "verbs list is full");
         require(bytes(_time).length < 20, "times list is full");
    verbList.push(_verb);
    nounList.push(_noun);
