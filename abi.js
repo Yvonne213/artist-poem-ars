@@ -1,5 +1,28 @@
-var contractAddress = "0x80D40eda133330f9c72e62981d919cE87C2dD67C"
+var contractAddress = "0x03625BFc0ba4a06D41A6A95d4c199538c17439B9"
 var contractABI =[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_verb",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_noun",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_time",
+				"type": "string"
+			}
+		],
+		"name": "textInput",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
 	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
@@ -103,29 +126,6 @@ var contractABI =[
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_verb",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_noun",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_time",
-				"type": "string"
-			}
-		],
-		"name": "textInput",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
