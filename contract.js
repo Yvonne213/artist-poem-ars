@@ -219,7 +219,7 @@ setInterval(changePlaceholder, 3000);
     if (verbInput === '') {
         alert("Please fill in the verb field.");
         return; // Exit the function early
-    } else if (verbInput.length > 12) {
+    } else if (verbInput.length >= 12) {
         alert("Verb input cannot exceed 12 characters.");
         return; // Exit the function early
     }
@@ -227,7 +227,7 @@ setInterval(changePlaceholder, 3000);
     if (nounInput === '') {
         alert("Please fill in the noun field.");
         return; // Exit the function early
-    } else if (nounInput.length > 15) {
+    } else if (nounInput.length >= 15) {
         alert("Noun input cannot exceed 15 characters.");
         return; // Exit the function early
     }
@@ -235,7 +235,7 @@ setInterval(changePlaceholder, 3000);
     if (timeInput === '') {
         alert("Please fill in the time field.");
         return; // Exit the function early
-    } else if (timeInput.length > 20) {
+    } else if (timeInput.length >= 20) {
         alert("Time input cannot exceed 20 characters.");
         return; // Exit the function early
     }
