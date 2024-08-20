@@ -215,10 +215,28 @@ setInterval(changePlaceholder, 3000);
     const nounInput = document.getElementById("nounInput").value.trim();
     const timeInput = document.getElementById("timeInput").value.trim();
 
-    // Check if any of the inputs are empty
-    if (verbInput === '' || nounInput === '' || timeInput === '') {
-        // Display a popup reminder
-        alert("Please fill in all fields.");
+    // Check if verbInput is empty or exceeds 
+    if (verbInput === '') {
+        alert("Please fill in the verb field.");
+        return; // Exit the function early
+    } else if (verbInput.length > 12) {
+        alert("Verb input cannot exceed 12 characters.");
+        return; // Exit the function early
+    }
+
+    if (nounInput === '') {
+        alert("Please fill in the noun field.");
+        return; // Exit the function early
+    } else if (nounInput.length > 15) {
+        alert("Noun input cannot exceed 15 characters.");
+        return; // Exit the function early
+    }
+
+    if (timeInput === '') {
+        alert("Please fill in the time field.");
+        return; // Exit the function early
+    } else if (timeInput.length > 20) {
+        alert("Time input cannot exceed 20 characters.");
         return; // Exit the function early
     }
 });
