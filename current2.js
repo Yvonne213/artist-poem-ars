@@ -1,7 +1,7 @@
 //-----------------------------------------------------
 let generatedWindow; // Variable to store the reference to the opened window
 var ws = new WebSocket("ws://192.168.194.100:8765");
-
+let lastDisplayedIndex = -1;
 ws.onmessage = function (event) {
   // trigger the message update
   console.log("sentence received! do something here!");
@@ -15,7 +15,8 @@ ws.onmessage = function (event) {
   if (!isThirdHTML) {
     const terminal = document.getElementById("userSentence");
     if (sentenceHistory.length > 1) {
-      terminal.textContent = sentenceHistory[sentenceHistory.length - 2]; // Show the last sentence
+      lastDisplayedIndex = sentenceHistory.length - 2;
+      terminal.textContent = sentenceHistory[lastDisplayedIndex];
     } else {
       terminal.textContent = generatedSentence;
     }
