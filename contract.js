@@ -127,7 +127,7 @@ setInterval(changePlaceholder, 3000);
     //.....................................................................
     // WebSocket handling 
     let generatedWindow; // Variable to store the reference to the opened window
-    var ws = new WebSocket("ws://192.168.194.100:8765");
+    var ws = new WebSocket("ws://192.168.194.110:8765");
 
     ws.onmessage = function (event) {
         // trigger the message update
